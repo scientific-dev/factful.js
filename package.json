@@ -1,6 +1,6 @@
 {
   "name": "factful.js",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "A Package which can give you Random Facts, Random Nasa Images in an easy way!",
   "main": "index.js",
   "keywords": [
@@ -8,9 +8,9 @@
     "facts",
     "snowflake",
     "spot-creation",
-	"mongo.eco",
-	"space-facts.js",
-	"decimal developement",
+	  "mongo.eco",
+	  "space-facts.js",
+	  "decimal developement",
     "dashboard developement"
   ],
   "license": "MIT",
