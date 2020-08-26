@@ -10,14 +10,12 @@ const computerFacts = require('./utils/facts/computer.json')
 // 2. Importing Other Files
 const nasaImages = require('./utils/others/nasa.json')
 
-// 3. Importing Other fact NPM for more facts
-const catFacts = require("cat-facts").random()
-const dogFacts = require("dog-facts").random()
-const covidFacts = require("covid-facts").random()
-
 // 4. Code starts
 
 function fact () {
+  const catFacts = require("cat-facts").random()
+  const dogFacts = require("dog-facts").random()
+  const covidFacts = require("covid-facts").random()
   let allFacts = [
     catFacts, dogFacts, covidFacts, emojiFacts[Math.floor(Math.random() * emojiFacts.length)], spaceFacts[Math.floor(Math.random() * spaceFacts.length)], computerFacts[Math.floor(Math.random() * computerFacts.length)]
   ]
