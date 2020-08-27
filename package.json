@@ -1,6 +1,6 @@
 {
   "name": "factful.js",
-  "version": "1.1.1",
+  "version": "1.1.5",
   "description": "A Package which can give you Random Facts, Random Nasa Images in an easy way!",
   "main": "index.js",
   "keywords": [
