@@ -9,7 +9,6 @@ A Package which can give you Random Facts, Random Nasa Images in an easy way!
 # Links
 - [GitHub](https://github.com/Scientific-Guy)
 - [Discord Server](https://discord.gg/FrduEZd)
-- [Npm Package](https://www.npmjs.com/package/factful.js)
 
 ## Quick Example
 #### 1. Importing Module
@@ -26,13 +25,14 @@ const facts = factful.fact()
 console.log(facts.all)
 
 // Getting Random Fact from a Paticular Cateogary
-// Current Cateogaries: emoji, space, cat, dog, covid, computer
+// Current Cateogaries: emoji, space, cat, dog, covid, computer, food
 console.log(facts.emoji)
 console.log(facts.space)
 console.log(facts.cat)
 console.log(facts.dog)
 console.log(facts.covid)
 console.log(facts.computer)
+console.log(facts.food)
 ```
 
 #### 3. Getting Random Nasa Image
