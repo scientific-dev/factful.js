@@ -6,6 +6,7 @@ console.log('Thanks for using Factful.js')
 const emojiFacts = require('./utils/facts/emoji.json')
 const spaceFacts = require('./utils/facts/space.json')
 const computerFacts = require('./utils/facts/computer.json')
+const foodFacts = require('./utils/facts/food.json')
 
 // 2. Importing Other Files
 const nasaImages = require('./utils/others/nasa.json')
@@ -17,12 +18,12 @@ function fact () {
   const dogFacts = require("dog-facts").random()
   const covidFacts = require("covid-facts").random()
   let allFacts = [
-    catFacts, dogFacts, covidFacts, emojiFacts[Math.floor(Math.random() * emojiFacts.length)], spaceFacts[Math.floor(Math.random() * spaceFacts.length)], computerFacts[Math.floor(Math.random() * computerFacts.length)]
+    catFacts, dogFacts, covidFacts, emojiFacts[Math.floor(Math.random() * emojiFacts.length)], spaceFacts[Math.floor(Math.random() * spaceFacts.length)], computerFacts[Math.floor(Math.random() * computerFacts.length)], foodFacts[Math.floor(Math.random() * foodFacts.length)]
   ]
-  const all = allFacts[Math.floor(Math.random() * allFacts.length)], emoji = emojiFacts[Math.floor(Math.random() * emojiFacts.length)], space = spaceFacts[Math.floor(Math.random() * spaceFacts.length)], cat = catFacts, dog = dogFacts, covid = covidFacts, computer = computerFacts[Math.floor(Math.random() * computerFacts.length)]
+  const all = allFacts[Math.floor(Math.random() * allFacts.length)], emoji = emojiFacts[Math.floor(Math.random() * emojiFacts.length)], space = spaceFacts[Math.floor(Math.random() * spaceFacts.length)], cat = catFacts, dog = dogFacts, covid = covidFacts, computer = computerFacts[Math.floor(Math.random() * computerFacts.length)], food = foodFacts[Math.floor(Math.random() * foodFacts.length)]
 
   return{
-    all, emoji, space, cat, dog, covid, computer
+    all, emoji, space, cat, dog, covid, computer, food
   }
 }
 
