@@ -11,27 +11,35 @@ const foodFacts = require('./utils/facts/food.json')
 // 2. Importing Other Files
 const nasaImages = require('./utils/others/nasa.json')
 
-// 4. Code starts
+// 3. Code starts
 
 function fact () {
+  // 4. Importing Other fact NPM for more facts
   const catFacts = require("cat-facts").random()
   const dogFacts = require("dog-facts").random()
   const covidFacts = require("covid-facts").random()
+  
   let allFacts = [
     catFacts, dogFacts, covidFacts, emojiFacts[Math.floor(Math.random() * emojiFacts.length)], spaceFacts[Math.floor(Math.random() * spaceFacts.length)], computerFacts[Math.floor(Math.random() * computerFacts.length)], foodFacts[Math.floor(Math.random() * foodFacts.length)]
   ]
-  const all = allFacts[Math.floor(Math.random() * allFacts.length)], emoji = emojiFacts[Math.floor(Math.random() * emojiFacts.length)], space = spaceFacts[Math.floor(Math.random() * spaceFacts.length)], cat = catFacts, dog = dogFacts, covid = covidFacts, computer = computerFacts[Math.floor(Math.random() * computerFacts.length)], food = foodFacts[Math.floor(Math.random() * foodFacts.length)]
 
   return{
-    all, emoji, space, cat, dog, covid, computer, food
+    all: allFacts[Math.floor(Math.random() * allFacts.length)],
+    emoji: emojiFacts[Math.floor(Math.random() * emojiFacts.length)],
+    space: spaceFacts[Math.floor(Math.random() * spaceFacts.length)],
+    cat: catFacts,
+    dog: dogFacts,
+    covid: covidFacts,
+    computer: computerFacts[Math.floor(Math.random() * computerFacts.length)],
+    food: foodFacts[Math.floor(Math.random() * foodFacts.length)]
   }
 }
 
-function nasa(){
-  return nasaImages[Math.floor(Math.random() * nasaImages.length)]
-}
-
 // 5. Export all Modules
-module.exports.fact = fact
-module.exports.nasa = nasa
-module.exports.version = require('./package.json').version
+module.exports = {
+  version: require('./package.json').version,
+  fact: fact,
+  nasa: () => {
+    return nasaImages[Math.floor(Math.random() * nasaImages.length)]
+  }
+}
