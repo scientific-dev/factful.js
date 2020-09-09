@@ -1,5 +1,5 @@
 # Factful.js
-A Package which can give you Random Facts, Random Nasa Images in an easy way!
+A Package which can give you Random Facts, Random Nasa Images in an easy way! If you can add more facts to the package in this Repo! Go to `/utils/facts` update or create more fact Json files and do a Pull request and help others ;)
 
 # Index
 - Importing Module
